@@ -364,6 +364,7 @@
   <meta charset="UTF-8">
   <title>Divyasree | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -372,7 +373,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="font-sans text-gray-800">
+<body class="font-sans text-gray-200 bg-[#0b0b0f]">
   <div class="sparkle-bg"></div>
 
 
@@ -385,7 +386,7 @@
 
       <!-- Logo -->
       <span class="text-lg font-semibold text-purple-400">
-        Divyasree
+        Divyasree Manpoor 
         </span>
 
 
@@ -415,13 +416,13 @@
   </div>
 
   <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden md:hidden border-t bg-white">
+  <div id="mobile-menu" class="hidden md:hidden border-t border-white/10 bg-[#0b0b0f] text-gray-300">
     <div class="space-y-2 px-4 py-4 text-sm font-medium">
-      <a href="#home" class="block rounded px-3 py-2 hover:bg-gray-100">Home</a>
-      <a href="#about" class="block rounded px-3 py-2 hover:bg-gray-100">About</a>
-      <a href="#skills" class="block rounded px-3 py-2 hover:bg-gray-100">Skills</a>
-      <a href="#projects" class="block rounded px-3 py-2 hover:bg-gray-100">Projects</a>
-      <a href="#resume" class="block rounded px-3 py-2 hover:bg-gray-100">Resume</a>
+      <a href="#home" class="block rounded px-3 py-2 hover:bg-purple-500/10">Home</a>
+      <a href="#about" class="block rounded px-3 py-2 hover:bg-purple-500/10">About</a>
+      <a href="#skills" class="block rounded px-3 py-2 hover:bg-purple-500/10">Skills</a>
+      <a href="#projects" class="block rounded px-3 py-2 hover:bg-purple-500/10">Projects</a>
+      <a href="#resume" class="block rounded px-3 py-2 hover:bg-purple-500/10">Resume</a>
       <a href="#contact"
          class="block rounded bg-black px-3 py-2 text-white text-center">
         Contact
@@ -432,7 +433,7 @@
 <!-- ================= NAVBAR END ================= -->
 
 <!-- ================= HOME ================= -->
-<section id="home" class="bg-[#0b0b0f] pt-32 min-h-screen flex items-start">
+<section id="home" class="bg-[#0b0b0f] pt-24 md:pt-32  min-h-screen flex items-center">
 
   <div class="max-w-6xl mx-auto px-4 text-center mt-10">
 
@@ -468,7 +469,6 @@
 
 <!-- ================= ABOUT ================= -->
 <section id="about" class="relative py-24 bg-white overflow-hidden">
-
   <!-- Sparkle Background -->
   <div class="about-sparkles"></div>
 
@@ -479,7 +479,7 @@
 </h2>
 
     <!-- About Card -->
-    <div class="about-card mx-auto">
+    <div class="about-card mx-auto reveal-card">
       <p class="about-text">
         I am an aspiring Full Stack Developer with a strong interest in designing
         clean, user-friendly websites. I enjoy learning how real-world
@@ -504,50 +504,55 @@
 <!-- ================= SKILLS ================= -->
 <section id="skills" class="skills-section fade-in">
   <h2 class="section-heading">
-  Skills <span class="sparkle">✦</span>
-</h2>
+    Skills <span class="sparkle">✦</span>
+  </h2>
 
   <div class="skills-grid">
-    <div class="skill-card">
+
+    <!-- Frontend -->
+    <div class="skill-card reveal-card">
       <h3>Frontend</h3>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React.js</li>
-        <li>Tailwind CSS</li>
+      <ul class="space-y-3 text-left">
+        <li><i class="devicon-html5-plain colored mr-2"></i> HTML</li>
+        <li><i class="devicon-css3-plain colored mr-2"></i> CSS</li>
+        <li><i class="devicon-javascript-plain colored mr-2"></i> JavaScript</li>
+        <li><i class="devicon-react-original colored mr-2"></i> React.js</li>
+        <li><i class="devicon-tailwindcss-original colored mr-2"></i> Tailwind CSS</li>
       </ul>
     </div>
 
-    <div class="skill-card">
+    <!-- Backend -->
+    <div class="skill-card reveal-card">
       <h3>Backend</h3>
-      <ul>
-        <li>Node.js</li>
-        <li>Express.js</li>
+      <ul class="space-y-3 text-left">
+        <li><i class="devicon-nodejs-plain colored mr-2"></i> Node.js</li>
+        <li><i class="devicon-express-original colored mr-2"></i> Express.js</li>
       </ul>
     </div>
 
-    <div class="skill-card">
+    <!-- Database & Services -->
+    <div class="skill-card reveal-card">
       <h3>Database & Services</h3>
-      <ul>
-        <li>SQL</li>
-        <li>Firebase</li>
-        <li>Supabase</li>
+      <ul class="space-y-3 text-left">
+        <li><i class="devicon-mysql-plain colored mr-2"></i> SQL</li>
+        <li><i class="devicon-firebase-plain colored mr-2"></i> Firebase</li>
+        <li><i class="devicon-supabase-plain colored mr-2"></i>Supabase</li>
       </ul>
     </div>
 
-    <div class="skill-card">
+    <!-- Tools -->
+    <div class="skill-card reveal-card">
       <h3>Tools</h3>
-      <ul>
-        <li>Git</li>
-        <li>GitHub</li>
-        <li>VS Code</li>
-        <li>Postman</li>
+      <ul class="space-y-3 text-left  ">
+        <li><i class="devicon-git-plain colored mr-2"></i> Git</li>
+        <li><i class="devicon-github-original colored mr-2"></i> GitHub</li>
+        <li><i class="devicon-vscode-plain colored mr-2"></i> VS Code</li>
+        <li><i class="devicon-postman-plain colored mr-2"></i> Postman</li>
       </ul>
     </div>
+
   </div>
 </section>
-
 
 
 <!-- ================= PROJECTS ================= -->
@@ -565,7 +570,7 @@
     <div class="grid gap-8 md:grid-cols-2 reveal">
 
       <!-- PROJECT CARD 1 -->
-       <div class="group rounded-lg border border-gray-200 p-6 transition-all duration-300 hover:-translate-y-1 " >
+       <div class="group rounded-lg border border-gray-200 p-6 transition-all duration-300 hover:-translate-y-1 reveal-card " >
       <div class="project-card">
         <h3 class="project-title">
           AI-Powered Daily Time Tracker
@@ -584,7 +589,7 @@
       </div>
 
       <!-- PROJECT CARD 2 -->
-       <div class="group rounded-lg border border-gray-200 p-6 transition-all duration-300 hover:-translate-y-1 " >
+       <div class="group rounded-lg border border-gray-200 p-6 transition-all duration-300 hover:-translate-y-1 reveal-card " >
          
       <div class="project-card">
         <h3 class="project-title">
@@ -659,7 +664,7 @@
         </p>
            <p>
           💼
-          <a href="https://www.linkedin.com/in/manpoor-divyasree"
+          <a href="https://www.linkedin.com/in/divyasree-manpoor-04aa19289/"
              target="_blank"
              class="contact-link">
             LinkedIn
@@ -702,7 +707,7 @@
   <!-- BOTTOM RIGHT COPYRIGHT -->
   <div class="max-w-6xl mx-auto px-6 mt-16 border-t border-purple-500/20 pt-4">
     <p class="text-sm text-gray-400 text-right">
-      © 2026 Divyasree. Built with HTML, Tailwind CSS & JavaScript.
+      © 2026 Manpoor Divyasree. Built with HTML, Tailwind CSS & JavaScript.
     </p>
   </div>
 
